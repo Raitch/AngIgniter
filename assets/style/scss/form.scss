@@ -1,0 +1,88 @@
+@import 'cross_browser';
+
+.rows {
+	button,
+	div,
+	label,
+	input[type="text"],
+	input[type="password"],
+	select,
+	textarea {
+		display: block;
+		margin: 0 0 10px 200px;
+		width: 350px;
+		@include box-sizing(border-box);
+	}
+
+	button,
+	label,
+	input[type="text"],
+	input[type="password"],
+	select {
+		height: 30px;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	select,
+	textarea {
+		background: #FFF;
+		border: 2px solid #444;
+		border-radius: 5px;
+	}
+
+	div,
+	label {
+		line-height: 30px;
+	}
+
+	div,
+	textarea {
+		min-height: 30px;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		padding: 0 5px;
+	}
+
+	label {
+		margin: 0;
+		position: absolute;
+		width: 200px;
+	}
+
+	label[for]:hover {
+		text-decoration: underline;
+	}
+
+	select {
+		padding: 3px;
+
+		optgroup {
+			padding: 3px;
+		}
+
+		option {
+			padding: 3px 7px;
+		}
+	}
+
+	textarea {
+		padding: 5px;
+		resize: vertical;
+	}
+
+	.error {
+		background: linear-gradient(#F5A09A, #E37971);
+		border: 1px solid #E37971;
+		box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+		color: rgba(0, 0, 0, .9);
+		font-size: 85%;
+		padding: 0 10px;
+	}
+
+	.ng-pristine {
+		box-shadow: none;
+	}
+}

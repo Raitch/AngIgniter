@@ -1,0 +1,12 @@
+@mixin background-linear-gradient($top, $bottom) {
+	background: -webkit-linear-gradient($top, $bottom);
+	background: -moz-linear-gradient($top, $bottom);
+	background: -ms-linear-gradient($top, $bottom);
+	background: -o-linear-gradient($top, $bottom);
+	background: linear-gradient($top, $bottom);
+}
+
+@mixin box-sizing($val) {
+	-moz-box-sizing: $val;
+	box-sizing: $val;
+}

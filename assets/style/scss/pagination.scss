@@ -1,0 +1,36 @@
+@import 'general';
+
+div.pagination {
+	font-size: 0;
+	margin: 10px auto;
+	text-align: center;
+
+	& > a {
+		background: linear-gradient(#F7D394, #F5CA7F);
+		border: 1px solid #F5CA7F;
+		border-radius: 3px;
+		color: rgba(0, 0, 0, .5);
+		display: inline-block;
+		font-size: 14px;
+		height: 25px;
+		line-height: 27px;
+		margin: 0 3px;
+		padding: 0 10px;
+		text-decoration: none;
+		transition: color .25s;
+		@include top-white-line(false);
+
+		&:focus {
+			@include top-white-line(true);
+		}
+
+		&:hover {
+			color: rgba(0, 0, 0, .9);
+		}
+
+		&.current {
+			font-weight: bold;
+			margin-top: -1px;
+		}
+	}
+}

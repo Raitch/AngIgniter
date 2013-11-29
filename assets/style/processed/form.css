@@ -1,0 +1,42 @@
+.rows button, .rows div, .rows label, .rows input[type="text"], .rows input[type="password"], .rows select, .rows textarea {
+  display: block;
+  margin: 0 0 10px 200px;
+  width: 350px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .rows button, .rows label, .rows input[type="text"], .rows input[type="password"], .rows select {
+    height: 30px; }
+  .rows input[type="text"], .rows input[type="password"], .rows select, .rows textarea {
+    background: #fff;
+    border: 2px solid #444;
+    border-radius: 5px; }
+  .rows div, .rows label {
+    line-height: 30px; }
+  .rows div, .rows textarea {
+    min-height: 30px; }
+  .rows input[type="text"], .rows input[type="password"] {
+    padding: 0 5px; }
+  .rows label {
+    margin: 0;
+    position: absolute;
+    width: 200px; }
+  .rows label[for]:hover {
+    text-decoration: underline; }
+  .rows select {
+    padding: 3px; }
+    .rows select optgroup {
+      padding: 3px; }
+    .rows select option {
+      padding: 3px 7px; }
+  .rows textarea {
+    padding: 5px;
+    resize: vertical; }
+  .rows .error {
+    background: linear-gradient(#f5a09a, #e37971);
+    border: 1px solid #e37971;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    color: rgba(0, 0, 0, .9);
+    font-size: 85%;
+    padding: 0 10px; }
+  .rows .ng-pristine {
+    box-shadow: none; }

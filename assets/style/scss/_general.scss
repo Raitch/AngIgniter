@@ -1,0 +1,12 @@
+@mixin top-white-line($focus) {
+
+	$shadow	:	0 2px 2px rgba(0, 0, 0, .25);
+
+	@if ( ! $focus) {
+		box-shadow: $shadow, 0 1px rgba(255, 255, 255, .5) inset;
+	}
+
+	@if ($focus) {
+		box-shadow: $shadow;
+	}
+}

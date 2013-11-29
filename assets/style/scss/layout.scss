@@ -1,0 +1,121 @@
+@import 'variables';
+@import 'cross_browser';
+@import 'general';
+
+/* Global START */
+
+body {
+	font-size: 14px;
+}
+
+body,
+button {
+	font-family: $default-font-family;
+}
+
+button {
+	border: 1px solid #7BF;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .25), 0 1px rgba(255, 255, 255, .5) inset;
+	color: rgba(255, 255, 255, .9);
+	display: inline-block;
+	font-weight: bold;
+	height: 30px;
+	padding: 0 15px;
+	text-decoration: none;
+	@include box-sizing(border-box);
+	@include background-linear-gradient(#9CF, #7BF);
+
+	@include top-white-line(false);
+
+	&:focus {
+		box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+		color: rgba(255, 255, 255, .75);
+		@include background-linear-gradient(#84BCF5, #57A1EB);
+
+		@include top-white-line(true);
+	}
+
+	&.left {
+		float: left;
+	}
+
+	&.right {
+		float: right;
+	}
+}
+
+a.button {
+	@extend button;
+	line-height: 30px;
+}
+
+/* Global END */
+
+/* Body START */
+
+div#container {
+	background: #FAFAFA;
+	margin: 20px auto;
+	min-height: 250px;
+	padding: 20px 30px;
+	width: 800px;
+
+	div#menu {
+		margin: 0 0 10px 0;
+
+		a {
+			background: #FEFEFE;
+			color: #55B;
+			display: inline-block;
+			font-weight: bold;
+			height: 35px;
+			line-height: 35px;
+			margin: 0 5px 0 0;
+			padding: 0 15px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		a.active {
+			border: solid #55B;
+			border-width: 0 0 2px 0;
+			height: 33px;
+		}
+	}
+}
+
+/* Body END */
+
+/* Message START */
+
+div#message {
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition: top .5s;
+	@include background-linear-gradient(#F79B4A, #DE7D28);
+
+	&.ng-hide {
+		display: block !important;
+		transition: none;
+	}
+
+	&.ng-hide,
+	&.hide {
+		top: -35px;
+	}
+
+	& > div {
+		color: #FFF;
+		font-weight: bold;
+		height: 35px;
+		line-height: 35px;
+		margin: 0 auto;
+		width: 860px;
+	}
+}
+
+/* Message END */

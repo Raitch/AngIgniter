@@ -1,0 +1,26 @@
+div.pagination {
+  font-size: 0;
+  margin: 10px auto;
+  text-align: center; }
+  div.pagination > a {
+    background: linear-gradient(#f7d394, #f5ca7f);
+    border: 1px solid #f5ca7f;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, .5);
+    display: inline-block;
+    font-size: 14px;
+    height: 25px;
+    line-height: 27px;
+    margin: 0 3px;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: color 0.25s;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25), 0 1px rgba(255, 255, 255, .5) inset; }
+    div.pagination > a:focus {
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .25), 0 1px rgba(255, 255, 255, .5) inset;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .25); }
+    div.pagination > a:hover {
+      color: rgba(0, 0, 0, .9); }
+    div.pagination > a.current {
+      font-weight: bold;
+      margin-top: -1px; }
