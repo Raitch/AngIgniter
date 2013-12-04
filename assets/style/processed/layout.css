@@ -75,12 +75,13 @@ div#message {
   position: fixed;
   right: 0;
   top: 0;
-  transition: top 0.5s;
   background: -webkit-linear-gradient(#f79b4a, #de7d28);
   background: -moz-linear-gradient(#f79b4a, #de7d28);
   background: -ms-linear-gradient(#f79b4a, #de7d28);
   background: -o-linear-gradient(#f79b4a, #de7d28);
   background: linear-gradient(#f79b4a, #de7d28);
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
   /* Message END */ }
   div#message.ng-hide {
     display: block !important;

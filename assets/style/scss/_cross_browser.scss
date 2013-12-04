@@ -10,3 +10,8 @@
 	-moz-box-sizing: $val;
 	box-sizing: $val;
 }
+
+@mixin transition($val) {
+	-webkit-transition: $val;
+	transition: $val;
+}

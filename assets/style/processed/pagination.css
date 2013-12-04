@@ -3,7 +3,6 @@ div.pagination {
   margin: 10px auto;
   text-align: center; }
   div.pagination > a {
-    background: linear-gradient(#f7d394, #f5ca7f);
     border: 1px solid #f5ca7f;
     border-radius: 3px;
     color: rgba(0, 0, 0, .5);
@@ -14,6 +13,12 @@ div.pagination {
     margin: 0 3px;
     padding: 0 10px;
     text-decoration: none;
+    background: -webkit-linear-gradient(#f7d394, #f5ca7f);
+    background: -moz-linear-gradient(#f7d394, #f5ca7f);
+    background: -ms-linear-gradient(#f7d394, #f5ca7f);
+    background: -o-linear-gradient(#f7d394, #f5ca7f);
+    background: linear-gradient(#f7d394, #f5ca7f);
+    -webkit-transition: color 0.25s;
     transition: color 0.25s;
     box-shadow: 0 2px 2px rgba(0, 0, 0, .25), 0 1px rgba(255, 255, 255, .5) inset; }
     div.pagination > a:focus {

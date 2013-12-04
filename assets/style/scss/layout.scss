@@ -95,8 +95,8 @@ div#message {
 	position: fixed;
 	right: 0;
 	top: 0;
-	transition: top .5s;
 	@include background-linear-gradient(#F79B4A, #DE7D28);
+	@include transition(top .5s);
 
 	&.ng-hide {
 		display: block !important;

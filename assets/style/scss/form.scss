@@ -1,4 +1,5 @@
 @import 'cross_browser';
+@import 'general';
 
 .rows {
 	button,
@@ -84,5 +85,13 @@
 
 	.ng-pristine {
 		box-shadow: none;
+	}
+
+	button.ng-pristine {
+		@include top-white-line(false);
+
+		&:focus {
+			@include top-white-line(true);	
+		}
 	}
 }
